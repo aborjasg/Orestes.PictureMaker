@@ -1,0 +1,73 @@
+﻿@page "/"
+@using AspireApp.Libraries.Models
+@using AspireApp.Libraries.Enums
+@using AspireApp.ServiceDefaults.Shared
+@using Newtonsoft.Json;
+@using System.Diagnostics
+
+@inject OrchestratorApiClient OrchestratorApi
+
+<PageTitle>Picture Maker</PageTitle>
+
+<h1>Picture Maker</h1>
+
+@if (runImage_list.Count > 0)
+{
+    @foreach (var runImage in runImage_list)
+    {
+        <p><em>@runImage.Name</em>: @runImage.CreatedDate [@runImage.Duration] - @runImage.Length(runImage.Content)</p>
+        <img src="@runImage.Content" />
+        <hr />
+    }    
+}
+
+@code {
+    private RunImage? runImageNew; //, runImageSaved;
+    private string imageNew = string.Empty, imageSaved = string.Empty;
+    private List<RunImage> runImage_list = new ();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        // Case 1: getSourceData:
+        // var responseGetDerivedData = await OrchestratorApi.getSourceData(new DerivedDataFilter() { Name = "Combined NCP (Picture)" });
+        // if (!string.IsNullOrEmpty(responseGetDerivedData!.Content))
+        // {
+        //     var responseProcessData = await OrchestratorApi.processData(new DerivedDataFilter() { CompressedDerivedData = responseGetDerivedData.Content });
+        //     runImageNew = UtilsForMessages.DeserializeObject<RunImage>(UtilsForMessages.Decompress(responseProcessData!.Content));
+        //     imageNew = UtilsForMessages.Decompress(runImageNew!.Content);
+        // }
+
+        // Case 2: getRunImage:
+        // var responseGetRunImage = await OrchestratorApi.getRunImage(1);
+        // if (!string.IsNullOrEmpty(responseGetRunImage!.Content))
+        // {
+        //     runImageSaved = UtilsForMessages.DeserializeObject<RunImage>(UtilsForMessages.Decompress(responseGetRunImage.Content));            
+        //     imageSaved = UtilsForMessages.Decompress(runImageSaved!.Content);
+        // }
+        var testType_list = new List<string>() {
+            "Heatmaps (10x8)",
+            "Combined NCP (Miniature)",
+            "Combined NCP (Picture)",
+            "Spectrum (Picture)",
+            "Energy/Electrical (Picture)",
+            "Energy Calibration (Picture)",
+        };
+
+        foreach (var testType in testType_list)
+        {
+            var responseGetDerivedData = await OrchestratorApi.getSourceData(new DerivedDataFilter() { Name = testType });
+            if (!string.IsNullOrEmpty(responseGetDerivedData!.Content))
+            {
+                var responseProcessData = await OrchestratorApi.processData(new DerivedDataFilter() { CompressedDerivedData = responseGetDerivedData.Content });
+                runImageNew = UtilsForMessages.DeserializeObject<RunImage>(UtilsForMessages.Decompress(responseProcessData!.Content));
+                if (runImageNew != null)
+                {
+                    runImageNew!.Content = UtilsForMessages.Decompress(runImageNew!.Content);
+                    runImage_list.Add(runImageNew);
+                }
+            }
+        }
+
+    }
+}

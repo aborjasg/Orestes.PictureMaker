@@ -1,0 +1,171 @@
+{
+  "info": {
+    "name": ".NET Samples",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "getRunImage",
+      "item": null,
+      "request": {
+        "auth": {
+          "type": null,
+          "apikey": null,
+          "awsv4": null,
+          "basic": null,
+          "bearer": null,
+          "digest": null,
+          "hawk": null,
+          "ntlm": null,
+          "oauth1": null,
+          "oauth2": null
+        },
+        "method": "GET",
+        "header": null,
+        "body": {
+          "mode": null,
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "formdata": null,
+          "urlencoded": null,
+          "file": null
+        },
+        "url": {
+          "raw": "https://localhost:7583/getRunImage/1",
+          "protocol": null,
+          "host": null,
+          "path": null,
+          "query": [],
+          "variable": null
+        }
+      }
+    },
+    {
+      "name": "saveRunImage",
+      "item": null,
+      "request": {
+        "auth": {
+          "type": null,
+          "apikey": null,
+          "awsv4": null,
+          "basic": null,
+          "bearer": null,
+          "digest": null,
+          "hawk": null,
+          "ntlm": null,
+          "oauth1": null,
+          "oauth2": null
+        },
+        "method": "POST",
+        "header": null,
+        "body": {
+          "mode": null,
+          "raw": "{\r\n    \"name\": \"Combined_NCP\",\r\n    \"dataSource\": \"3VvBahtBDP2XPZviiRtScivtJZcQejWmuMSFQOJA6kJLyL/XoS3ZzM6Mnp6k3W0Pi5P17mikp5H0NOPH7nJ7t+vOuw/3d19u9rvrz5cfrrpFd3V7f7g47O6+defrx8oz7x8etj8/bg/b7nz//fb2+NL9zf7waff1+M7J6eJ0uVl0F/vr3Y/ft5aL5eZpAQy2Xi/fLBfpeD1/Wq/COJvFGnySlViRQM4XkJCEEVDdes8dJSTFKElvQYOVdBIYZKV3kkkHCa+ylbQ21vuS1VKVvxU4JE7XAg79ERA0hWcDvDXTUSGBjFUEDsrvSB2kSNPDpiEBXLOEL7HoYhKSPUoQOhjzBKhDhp5GGoiDAXVyPejjUhrFl3I7owj/jUOVKEjo4OOtyLrgJWgQBSQW6iWPi8sPiB54ZeyIdpCV7DpIutTXQ8DanlVlzNYam1eMcLV6N6CEyUYJ0z9h8DJRyMOtH6T56DFWcg6ezjjYClQm7fiEaZCmCIQtx4bQZzQq4jASKAHx2Lk2MAKxcCpQGzMgrKRMrQ5W4qlIq6BWzMRxxY3XwMAkaBoxgl4VshNHFLxG1iFtzKgKak7qCpbxaMVWJ52BV6YDW102xgBoLdlmU1pJI2WoQ2BuEBp6TtLI9aCwnqEpOW1Dr7fyBCtZ2z9pQAmPm4QnZ2f5LmHSUsJG56o6KcAskxd3JX1iC1QipAfusHE61NBukx2v1oJdBxR1LNWQNi81Dyan5pYyZhimA5LAn6jh7DuClZgyrHZfTmZO6Bu91a8wIkYmUr6tRcKkdVBHx5MwHOm0rhV9niayaSU/JHcdNH7j1yKRGhixeVqBxWRxSZmLW5YbnewEXEG1Ru/vEXan5FZVjC8ZkM39KviU4YsED6tUZlHYJRxwwqTnhN4zbXtNTaomc8fUXvoIlCaJD0ibAo9xDv46WpzWtObmocN4EsbswrS8seZPYIUk1I+kZfqfQWdTMaSd2EJwF0b2pRImyp6Dkv0TXqDstyEeynWSDF4AnsUjsieJg4QNnkW9Klb/yNfWwdINa8S24LhktxLQYQo+Se1npYZE4y88AMmGQx42K7GdmILXghkIqVUrzzXiklZS5bvAFVde07m2mqq+Imm4TXi6fJtvE554UUINIAWlZ1Vka40/hJQtX+QSWBqh9D+Cy+uWkeZNOw7OwVQpYfrTTfWiQjMCGr6xAETOu2KlIHo+iy22vuVsvsSO1PK/8pq2emz2bPB2rS4/kDNRNJJsErzmXfASx43IyhjkiUXkGT+yw2VRZsRKuSlYyYFUGzMQkCNG3XJmreWPdGl0jBJapcRJKOmjq70taHO+lFx8iczJJA7+lbEF6QT+mDDjhMmHE2py5XgkvCzB6N2kDkiTROc13jWYzGsZftKWAPoG/JxfVSHMxgEHORO0ImX6z2IcGruxGtjxIqpsZTfG+UhKub8gdbnQOdfreOva1ePQWgv2Po/XNR5zfq1D3iVSspraPUe2U/HJWXWH/SUI2XFiHco4lKpsbXVQjktRflSvBNAMCs5gFt6KrO12NePBnRpjKLIoORNipyGPkMJ7RM2n7MgYvBW10mCb8GyV8m3C1ZgnR/VO0zIkYq52iNOGByEMGlM+8C7YHDRImvx8rcPlfPp1XB044pzrBCRs5xOLehwIq+T3nM8ezdVbjdgYfo/SKLcKsdWLLMg6BEgKbFW9SPBM8YU4NtpmauBFHl9Ao187ahBtKQdfIvzLsUAtWS9NgDQzd0GnoNOvve8mbaz65+lWvDfoCURvjTSfPK2smUgcFN9VsigSMVAONNwmHHDC9MwJN0+/AA==\"    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "formdata": null,
+          "urlencoded": null,
+          "file": null
+        },
+        "url": {
+          "raw": "https://localhost:7583/saveRunImage",
+          "protocol": null,
+          "host": null,
+          "path": null,
+          "query": [],
+          "variable": null
+        }
+      }
+    },
+    {
+      "name": "getSourceData",
+      "item": null,
+      "request": {
+        "auth": {
+          "type": null,
+          "apikey": null,
+          "awsv4": null,
+          "basic": null,
+          "bearer": null,
+          "digest": null,
+          "hawk": null,
+          "ntlm": null,
+          "oauth1": null,
+          "oauth2": null
+        },
+        "method": "POST",
+        "header": null,
+        "body": {
+          "mode": null,
+          "raw": "{\r\n    \"Name\": \"Combined_NCP\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "formdata": null,
+          "urlencoded": null,
+          "file": null
+        },
+        "url": {
+          "raw": "https://localhost:7583/getSourceData",
+          "protocol": null,
+          "host": null,
+          "path": null,
+          "query": [],
+          "variable": null
+        }
+      }
+    },
+    {
+      "name": "processData",
+      "item": null,
+      "request": {
+        "auth": {
+          "type": null,
+          "apikey": null,
+          "awsv4": null,
+          "basic": null,
+          "bearer": null,
+          "digest": null,
+          "hawk": null,
+          "ntlm": null,
+          "oauth1": null,
+          "oauth2": null
+        },
+        "method": "POST",
+        "header": null,
+        "body": {
+          "mode": null,
+          "raw": "{\r\n    \"name\": \"Combined_NCP\",\r\n    \"dataSource\": \"3VvBahtBDP2XPZviiRtScivtJZcQejWmuMSFQOJA6kJLyL/XoS3ZzM6Mnp6k3W0Pi5P17mikp5H0NOPH7nJ7t+vOuw/3d19u9rvrz5cfrrpFd3V7f7g47O6+defrx8oz7x8etj8/bg/b7nz//fb2+NL9zf7waff1+M7J6eJ0uVl0F/vr3Y/ft5aL5eZpAQy2Xi/fLBfpeD1/Wq/COJvFGnySlViRQM4XkJCEEVDdes8dJSTFKElvQYOVdBIYZKV3kkkHCa+ylbQ21vuS1VKVvxU4JE7XAg79ERA0hWcDvDXTUSGBjFUEDsrvSB2kSNPDpiEBXLOEL7HoYhKSPUoQOhjzBKhDhp5GGoiDAXVyPejjUhrFl3I7owj/jUOVKEjo4OOtyLrgJWgQBSQW6iWPi8sPiB54ZeyIdpCV7DpIutTXQ8DanlVlzNYam1eMcLV6N6CEyUYJ0z9h8DJRyMOtH6T56DFWcg6ezjjYClQm7fiEaZCmCIQtx4bQZzQq4jASKAHx2Lk2MAKxcCpQGzMgrKRMrQ5W4qlIq6BWzMRxxY3XwMAkaBoxgl4VshNHFLxG1iFtzKgKak7qCpbxaMVWJ52BV6YDW102xgBoLdlmU1pJI2WoQ2BuEBp6TtLI9aCwnqEpOW1Dr7fyBCtZ2z9pQAmPm4QnZ2f5LmHSUsJG56o6KcAskxd3JX1iC1QipAfusHE61NBukx2v1oJdBxR1LNWQNi81Dyan5pYyZhimA5LAn6jh7DuClZgyrHZfTmZO6Bu91a8wIkYmUr6tRcKkdVBHx5MwHOm0rhV9niayaSU/JHcdNH7j1yKRGhixeVqBxWRxSZmLW5YbnewEXEG1Ru/vEXan5FZVjC8ZkM39KviU4YsED6tUZlHYJRxwwqTnhN4zbXtNTaomc8fUXvoIlCaJD0ibAo9xDv46WpzWtObmocN4EsbswrS8seZPYIUk1I+kZfqfQWdTMaSd2EJwF0b2pRImyp6Dkv0TXqDstyEeynWSDF4AnsUjsieJg4QNnkW9Klb/yNfWwdINa8S24LhktxLQYQo+Se1npYZE4y88AMmGQx42K7GdmILXghkIqVUrzzXiklZS5bvAFVde07m2mqq+Imm4TXi6fJtvE554UUINIAWlZ1Vka40/hJQtX+QSWBqh9D+Cy+uWkeZNOw7OwVQpYfrTTfWiQjMCGr6xAETOu2KlIHo+iy22vuVsvsSO1PK/8pq2emz2bPB2rS4/kDNRNJJsErzmXfASx43IyhjkiUXkGT+yw2VRZsRKuSlYyYFUGzMQkCNG3XJmreWPdGl0jBJapcRJKOmjq70taHO+lFx8iczJJA7+lbEF6QT+mDDjhMmHE2py5XgkvCzB6N2kDkiTROc13jWYzGsZftKWAPoG/JxfVSHMxgEHORO0ImX6z2IcGruxGtjxIqpsZTfG+UhKub8gdbnQOdfreOva1ePQWgv2Po/XNR5zfq1D3iVSspraPUe2U/HJWXWH/SUI2XFiHco4lKpsbXVQjktRflSvBNAMCs5gFt6KrO12NePBnRpjKLIoORNipyGPkMJ7RM2n7MgYvBW10mCb8GyV8m3C1ZgnR/VO0zIkYq52iNOGByEMGlM+8C7YHDRImvx8rcPlfPp1XB044pzrBCRs5xOLehwIq+T3nM8ezdVbjdgYfo/SKLcKsdWLLMg6BEgKbFW9SPBM8YU4NtpmauBFHl9Ao187ahBtKQdfIvzLsUAtWS9NgDQzd0GnoNOvve8mbaz65+lWvDfoCURvjTSfPK2smUgcFN9VsigSMVAONNwmHHDC9MwJN0+/AA==\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "formdata": null,
+          "urlencoded": null,
+          "file": null
+        },
+        "url": {
+          "raw": "https://localhost:7583/processData",
+          "protocol": null,
+          "host": null,
+          "path": null,
+          "query": [],
+          "variable": null
+        }
+      }
+    }
+  ],
+  "variable": null,
+  "auth": null
+}

@@ -1,0 +1,433 @@
+[
+  {
+    "Name": "D-Number Stability",
+    "TestType": "stability",
+    "PictureDimensions": [ 340, 720 ],
+    "PictureLayout": [ 1, 3 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 30, 20 ],
+    "PlotSpacing": [ 0, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "heatmap",
+        "Title": "Heatmap (Plot)",
+        "PlotType": "heatmap_stability",
+        "AreaLayout": "None",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 8,
+        "Active": true,
+        "IsTitleVisible": true,
+        "IsAxisVisible": true,
+        "IsBarVisible": false,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 0, 0 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 0, 0 ]
+          }
+        ],
+        "Bar": {
+          "Orientation": "Vertical",
+          "Spacing": [ 5, 0 ],
+          "Size": [ 5, 48 ],
+          "Colors": [],
+          "ColorPositions": [],
+          "ColorMap": "viridis",
+          "Labels": [ 0.55, 0.95, 0.20 ],
+          "Offset": [ 0, 0 ],
+          "IsLabelVisible": false,
+          "Edges": [ false, false ],
+          "Active": false
+        }
+      },
+      {
+        "Name": "histogram",
+        "Title": "Histogram (Plot)",
+        "PlotType": "histogram_stability",
+        "AreaLayout": "Plain",
+        "FrameSize": [ 290, 200 ],
+        "FrameSpace": [ 30, 0 ],
+        "StrokeWidth": 7,
+        "Active": true,
+        "IsTitleVisible": true,
+        "IsAxisVisible": true,
+        "IsBarVisible": false,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [],
+            "Offset": [ 10, 10 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [],
+            "Offset": [ 0, 0 ]
+          }
+        ],
+        "Bar": {
+          "Orientation": "Vertical",
+          "Spacing": [ 30, 0 ],
+          "Size": [
+            8,
+            192
+          ],
+          "Colors": [],
+          "ColorPositions": [],
+          "ColorMap": "viridis",
+          "Labels": [
+            0.55,
+            0.95,
+            0.05
+          ],
+          "Offset": [
+            0,
+            0
+          ],
+          "Active": false
+        }
+      },
+      {
+        "Name": "Combined_NCP",
+        "Title": "NCP (Plot)",
+        "PlotType": "ncp",
+        "AreaLayout": "Squad",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 8,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 4, 4 ] // StrokeWidth / 2
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 4, 4 ] // StrokeWidth / 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Heatmaps (10x8)",
+    "TestType": "heatmapDM",
+    "PictureDimensions": [ 742, 402 ],
+    "PictureLayout": [ 10, 8 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 2, 2 ],
+    "PlotSpacing": [ 0, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "heatmap",
+        "Title": "Heatmap (Plot)",
+        "PlotType": "heatmap",
+        "AreaLayout": "None",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 2,
+        "IsTitleVisible": false,
+        "IsAxisVisible": false,
+        "IsBarVisible": false,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 0, 0 ] 
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 0, 0 ] 
+          }
+        ],
+        "Bar": {
+          "Orientation": "Vertical",
+          "Spacing": [ 2, 0 ],
+          "Size": [ 5, 48 ],
+          "Colors": [],
+          "ColorPositions": [],
+          "ColorMap": "viridis",
+          "Labels": [ 0.55, 0.95, 0.20 ],
+          "Offset": [ 0, 0 ],
+          "IsLabelVisible": false,
+          "Edges": [ false, false ],
+          "Active": true
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Combined NCP (Miniature)",
+    "TestType": "ncps",
+    "PictureDimensions": [ 78, 418 ],
+    "PictureLayout": [ 1, 8 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 2, 2 ],
+    "PlotSpacing": [ 0, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "Combined_NCP",
+        "Title": "",
+        "PlotType": "ncp",
+        "AreaLayout": "Squad",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 2,
+        "IsTitleVisible": false,
+        "IsAxisVisible": false,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 1, 1 ] // StrokeWidth / 2
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 1, 1 ] // StrokeWidth / 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Combined NCP (Picture)",
+    "TestType": "ncps",
+    "PictureDimensions": [ 640, 960 ],
+    "PictureLayout": [ 2, 4 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 25, 25 ],
+    "PlotSpacing": [ 0, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "Combined_NCP",
+        "Title": "NCP (Plot)",
+        "PlotType": "ncp",
+        "AreaLayout": "Squad",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 8,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 4, 4 ] // StrokeWidth / 2
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 4, 4 ] // StrokeWidth / 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Spectrum (Picture)",
+    "TestType": "spectrum",
+    "PictureDimensions": [ 720, 280 ],
+    "PictureLayout": [ 2, 1 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 20, 20 ],
+    "PlotSpacing": [ 5, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "linechart",
+        "Title": "LineChart (Plot)",
+        "PlotType": "linechart",
+        "AreaLayout": "Plain",
+        "FrameSize": [ 320, 240 ],
+        "FrameSpace": [],
+        "StrokeWidth": 2,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ -10, 10, 1 ],
+            "Offset": [ 0, 0 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [ -10, 10, 1 ],
+            "Offset": [ 0, 0 ]
+          }
+        ]
+      },
+      {
+        "Name": "histogram",
+        "Title": "Histogram (Plot)",
+        "PlotType": "histogram1",
+        "AreaLayout": "Plain",
+        "FrameSize": [ 320, 240 ],
+        "FrameSpace": [],
+        "StrokeWidth": 10,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [],
+            "Offset": [ 5, 5 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [],
+            "Offset": [ 0, 0 ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Energy/Electrical (Picture)",
+    "TestType": "energy",
+    "PictureDimensions": [ 820, 280 ],
+    "PictureLayout": [ 2, 1 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 20, 20 ],
+    "PlotSpacing": [ 50, 10 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "heatmap",
+        "Title": "Heatmap (Plot)",
+        "PlotType": "heatmap",
+        "AreaLayout": "Plain",
+        "FrameSize": [],
+        "FrameSpace": [],
+        "StrokeWidth": 10,
+        "IsBarVisible": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 36, 6 ],
+            "Offset": [ 5, 5 ] // StrokeWidth / 2
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 24, 6 ],
+            "Offset": [ 5, 5 ] // StrokeWidth / 2
+          }
+        ],
+        "Bar": {
+          "Orientation": "Vertical",
+          "Spacing": [ 30, 0 ],
+          "Size": [
+            10,
+            240
+          ],
+          "Colors": [],
+          "ColorPositions": [],
+          "ColorMap": "viridis",
+          "Labels": [
+            0.55,
+            0.95,
+            0.05
+          ],
+          "Offset": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "Name": "histogram",
+        "Title": "Histogram (Plot)",
+        "PlotType": "histogram2",
+        "AreaLayout": "Plain",
+        "FrameSize": [ 320, 240 ],
+        "FrameSpace": [ 30, 0 ],
+        "StrokeWidth": 20,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [],
+            "Offset": [ 10, 10 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [],
+            "Offset": [ 0, 0 ]
+          }
+        ],
+        "Bar": {
+          "Orientation": "Vertical",
+          "Spacing": [ 30, 0 ],
+          "Size": [
+            8,
+            192
+          ],
+          "Colors": [],
+          "ColorPositions": [],
+          "ColorMap": "viridis",
+          "Labels": [
+            0.55,
+            0.95,
+            0.05
+          ],
+          "Offset": [
+            0,
+            0
+          ],
+          "Active": false
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Energy Calibration (Picture)",
+    "TestType": "energy_cal",
+    "PictureDimensions": [ 1140, 280 ],
+    "PictureLayout": [ 3, 1 ],
+    "PicturePreviewFlag": true,
+    "PicturePreviewPath": "C:\\Redlen\\Plots\\",
+    "StartPoint": [ 40, 20 ],
+    "PlotSpacing": [ 0, 0 ],
+    "Active": true,
+    "PlotTemplates": [
+      {
+        "Name": "Curve Chart",
+        "Title": "Curve Chart (Plot)",
+        "PlotType": "curvechart",
+        "AreaLayout": "Plain",
+        "FrameSize": [ 320, 240 ],
+        "FrameSpace": [],
+        "StrokeWidth": 2,
+        "Active": true,
+        "Axis": [
+          {
+            "Label": "X",
+            "Range": [ 0, 0, 1 ],
+            "Offset": [ 20, 20 ]
+          },
+          {
+            "Label": "Y",
+            "Range": [ 0, 0, 1 ],
+            "Offset": [ 0, 10 ]
+          }
+        ]
+      }
+    ]
+  }
+]

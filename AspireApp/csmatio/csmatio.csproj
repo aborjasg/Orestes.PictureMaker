@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Version>1.0.20</Version>
+    <Description>Matlab I/O API Library for .NET</Description>
+    <Authors>Copyright ©  2007, David A. Zier</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Debug_SimulationData;Debug_MockData</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireApp.Libraries\AspireApp.Libraries.csproj" />
+  </ItemGroup>
+
+</Project>
